@@ -29,8 +29,10 @@
   </nav>
 
   <section class="container2">
-    <p>
     <h1>!Hola Soy Victor Alvarez!</h1>
+    <img src="img/Mats-1.jpg" alt="" >
+    <p>
+    
     </p>
     <p>Desarrollador Web Frontend apasionado por crear experiencias digitales increibles</p>
   </section>
@@ -166,26 +168,62 @@
 
   <section id="contacto">
     <div class="guia">
-      <h2>Contacto</h2>
+      <h2>Contáctame</h2>
       <div class="underline"></div>
     </div>
-    <div>
-      <form class="contact-form" id ="contactForm" submit="return false;">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Mensaje:</label>
-        <textarea id="mensaje" name="message" rows="4" required></textarea>
-         
-
-        <button type="submit" id="button">Enviar</button>
-      </form>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="info-icon email-icon">📧</div>
+          <div class="info-content">
+            <h4>Email</h4>
+            <p>tuemail@ejemplo.com</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon phone-icon">📱</div>
+          <div class="info-content">
+            <h4>Teléfono</h4>
+            <p>+57 123 456 7890</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon location-icon">📍</div>
+          <div class="info-content">
+            <h4>Ubicación</h4>
+            <p>Medellín, Colombia</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-container">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@ejemplo.com" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="message" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+          </div>
+          <button type="submit" id="button" class="submit-button">Enviar mensaje</button>
+        </form>
+      </div>
     </div>
-
-
+    <div class="social-links">
+      <a href="#" class="social-link">LinkedIn</a>
+      <a href="#" class="social-link">GitHub</a>
+      <a href="#" class="social-link">Twitter</a>
+    </div>
   </section>
 
 
