@@ -20,10 +20,14 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   border: 3px solid rgba(44, 67, 179, 0.3);
 }
-
-.nav-container {
-  margin: 0;
-  font-size: 1.4rem;
+/* Oculta el botón hamburguesa por defecto */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
 }
 
 .nav-list {
@@ -34,6 +38,51 @@ body {
   margin-right: 20px;
   /* Añade margen a la derecha para mover la lista hacia la izquierda */
 }
+
+/* Menú hamburguesa para móviles */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background: #2c3e50;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 100;
+    transition: display 0.3s, opacity 0.3s;
+    opacity: 0;
+  }
+  .nav-list.nav-list--open {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+
+
+
+.nav-container {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+
 
 .nav-list li {
   margin-left: 2rem;
